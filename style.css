@@ -476,7 +476,9 @@ section:not(.home) .home-img {
     margin-top: 2rem;
     cursor: pointer;
 }
-
+.sectiuon{
+    color: #1f242d;
+}
 @media screen and (max-widht:1200px){
     html{
         font-size: 55%;
