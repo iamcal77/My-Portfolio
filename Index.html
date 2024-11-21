@@ -10,6 +10,7 @@
 <body>
     <header>
         <a href="#" class="logo">Porfolio.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav>
             <a href="#" class="active">Home</a>
             <a href="#">Services</a>
@@ -30,12 +31,12 @@
         <div class="bar"style="--i:2;"></div>
         <div class="bar"style="--i:1;"></div>
     </div>
-    <section class="home active">
+    <section class="home active ">
         <div class="home-info">
             <h1>Calvin Kipkiriu</h1>
             <h2>I'm a 
-                <span style="--i:3" data-text="Frontend Developer">Frontend Developer</span>
-                <span style="--i:2"data-text="Backend Developer">Backend Developer</span>
+                <span style="--i:3" data-text="Fullstack Developer">Fullstack Developer</span>
+                <span style="--i:2"data-text="Cloud Practitioner">Cloud Practitioner</span>
                 <span style="--i:1"data-text="Designer">Designer</span>
             </h2>
             <p>Highly motivated software engineer with a strong foundation in full-stack development. Skilled in HTML, CSS, JAVASCRIPT,TYPESCRIPT,REACT,JAVA,C#, PYTHON ,SQL and MYSQL. Eager to contribute to dynamic team and gain practical experience abilities with a commitment to producing high-quality work. Open to entry-level positions and opportunities for professional growth</p>
@@ -71,109 +72,122 @@
     <section class="services ">
         <h2 class="heading">My <span>Services</span></h2>
         <div class="services-container">
+            <!-- Web Development Service -->
             <div class="service-box">
                 <div class="icon">
                     <i class='bx bx-code-alt'></i>
-                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
                 </div>
                 <h3>Web Development</h3>
-                <p>hdfgdlufjdwi;orejgreoghruhfewlifjelifrewgf</p>
+                <p>
+                    I create fully responsive, high-performing websites tailored to meet your business goals. From front-end 
+                    to back-end development, I ensure seamless user experiences and scalable solutions using the latest 
+                    technologies like React, Node.js, and more.
+                </p>
             </div>
+            <!-- UI/UX Design Service -->
             <div class="service-box">
                 <div class="icon">
                     <i class='bx bxs-paint'></i>
-                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
                 </div>
                 <h3>UI/UX Design</h3>
-                <p>hdfgdlufjdwi;orejgreoghruhfewlifjelifrewgf</p>
+                <p>
+                    I craft intuitive and visually appealing designs that enhance user engagement. My expertise in tools 
+                    like Figma, Adobe XD, and Sketch ensures that every design is tailored to your brand and audience.
+                </p>
             </div>
+            <!-- Mobile App Development Service -->
             <div class="service-box">
                 <div class="icon">
-                    <i class='bx bxs-paint'></i>
-                    <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                    <i class='bx bx-mobile'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
                 </div>
-                <h3>UI/UX Design</h3>
-                <p>hdfgdlufjdwi;orejgreoghruhfewlifjelifrewgf</p>
+                <h3>Mobile App Development</h3>
+                <p>
+                    I develop robust and user-friendly mobile applications for both Android and iOS platforms using 
+                    frameworks like Flutter and React Native. My focus is on delivering apps that combine performance with 
+                    an exceptional user interface.
+                </p>
             </div>
-
+            <!-- SEO Optimization Service -->
         </div>
-
     </section>
+    
 
     <section class="resume ">
         <div class="resume-container">
+            <!-- Left Column -->
             <div class="resume-box">
                 <h2>Why Hire Me?</h2>
-                <p class="desc">hdfgdlufjdwi;orejgreoghruhfewlifjelifrewgf</p>
-                <button class="resume-btn active">Experience</button>
-                <button class="resume-btn">Education</button>
-                <button class="resume-btn">Skills</button>
-                <button class="resume-btn">About Me</button>
+                <p class="desc">I bring a proven track record of delivering quality software solutions and thrive in dynamic, collaborative environments. I am committed to excellence and continuous learning.</p>
+                <button class="resume-btn active" onclick="showDetails('experience')">Experience</button>
+                <button class="resume-btn" onclick="showDetails('education')">Education</button>
+                <button class="resume-btn" onclick="showDetails('skills')">Skills</button>
+                <button class="resume-btn" onclick="showDetails('about')">About Me</button>
             </div>
+    
+            <!-- Right Column -->
             <div class="resume-box">
-                <div class="resume-detail experience active">
-                    <h2>My <span>Experience</span></h2>
-                    <p class="desc">dgjgrrijfhfddgfdghdskdsldshdcvdcvdcdckjscls;lclc</p>
+                <div id="experience" class="resume-detail active">
+                    <h2 class="heading">My <span>Experience</span></h2>
                     <div class="resume-list">
                         <div class="resume-item">
-                            <p class="year">2023-2024</p>
-                            <h3>FullStack Developer</h3>
-                            <p class="company">Business Cloud</p>
-                            <p>ueyyddgffdidoddmldeofugdvdegdkfhfvdffefefvdbc</p>
-                        </div>
-                    </div>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <p class="year">2024-Present</p>
-                            <h3>FullStack Developer</h3>
+                            <p class="year">2024 - Present</p>
+                            <h3>Software Engineer</h3>
                             <p class="company">Freelancer</p>
-                            <p>ueyyddgffdidoddmldeofugdvdegdkfhfvdffefefvdbc</p>
+                            <p>Developed scalable web and mobile applications, improved code quality, and collaborated with cross-functional teams to deliver products on time.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2023 - 2024</p>
+                            <h3> Software Engineer</h3>
+                            <p class="company">Business Cloud</p>
+                            <p>Worked on client-side applications, optimized backend APIs, and improved database performance for large datasets.</p>
                         </div>
                     </div>
-                </div> 
-            </div>
-            <div class="resume-box">
-                <div class="resume-detail education">
-                    <h2>My <span>Education</span></h2>       
+                </div>
+    
+                <div id="education" class="resume-detail">
+                    <h2 class="heading">My <span>Education</span></h2>
                     <div class="resume-list">
                         <div class="resume-item">
-                            <p class="year">2023-2023</p>
+                            <p class="year">2023</p>
                             <h3>Software Engineering</h3>
                             <p class="company">Moringa School</p>
-                            <p>ueyyddgffdidoddmldeofugdvdegdkfhfvdffefefvdbc</p>
+                            <p>Completed an intensive program focusing on full-stack development, including React, Node.js, and SQL databases.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2024 - 2024</p>
+                            <h3>Cloud Practitioner</h3>
+                            <p class="company">AWS</p>
+                            <p>Graduated with honors, gaining foundational knowledge in Cloud Computing and software development.</p>
                         </div>
                     </div>
-                </div> 
-            </div>
-            <div class="resume-box">
-                <div class="resume-detail skilss">
-                    <h2>My <span>Skills</span></h2>
+                </div>
+    
+                <div id="skills" class="resume-detail">
+                    <h2 class="heading">My <span>Skills</span></h2>
                     <div class="resume-list">
                         <div class="resume-item">
-                            <h3>Skills</h3>
-                            <p class="company">Moringa School</p>
-                            <p class="company">Moringa School</p>
-                            <p class="company">Moringa School</p>
-                            <p class="company">Moringa School</p>
+                            <h3 class="heading">Technical Skills</h3>
+                            <ul>
+                                <li>Frontend: HTML, CSS, JavaScript,TypeScript, React, Tailwind CSS</li>
+                                <li>Backend: Node.js, Python, C#, Java</li>
+                                <li>Databases: MySQL, PostgreSQL</li>
+                                <li>Tools: Docker, Kubernetes, Git</li>
+                            </ul>
                         </div>
                     </div>
-                </div> 
-            </div>
-            <div class="resume-box">
-                <div class="resume-detail skilss">
-                    <h2><span>About Me</span></h2>
-                    <div class="resume-list">
-                        <div class="resume-item">
-                            <h3>About</h3>
-                            <p class="company">kjdhffflidfigfegiefdoiefepofe;lkfdhfef</p>
-
-                        </div>
-                    </div>
-                </div> 
+                </div>
+    
+                <div id="about" class="resume-detail">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p>I am a passionate and dedicated software engineer specializing in full-stack development. My mission is to deliver innovative and user-centric solutions while continually improving my skills and embracing challenges.</p>
+                </div>
             </div>
         </div>
-
     </section>
+    
     <section class="contact ">
         <div class="contact-container"> 
             <div class="contact-box">

@@ -63,4 +63,13 @@ resumeBtns.forEach((btn, idx) => {
         })
         resumeDetails[idx].classList.add('active');
     });
+        // Get the menu icon and nav
+        const menuIcon = document.getElementById('menu-icon');
+        const nav = document.querySelector('nav');
+    
+        // Toggle the menu when the icon is clicked
+        menuIcon.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
 });
+
