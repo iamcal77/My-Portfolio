@@ -73,3 +73,53 @@ resumeBtns.forEach((btn, idx) => {
         });
 });
 
+const arrRight = document.querySelector('.portfolio-box .arrow-right');
+const arrLeft = document.querySelector('.portfolio-box .arrow-left');
+let index = 0;
+
+const activatePortfolio = () => {
+    const imgSlide = document.querySelector('.portfolio-carousel .image-slide');
+    const portfolioDetails = document.querySelectorAll('.portfolio-detail');
+
+    // Update the active portfolio detail and slide position
+    const updatePortfolio = () => {
+        // Update active portfolio details
+        portfolioDetails.forEach((detail, i) => {
+            detail.classList.toggle('active', i === index);
+        });
+
+        // Update slide position
+        imgSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
+
+        // Handle arrow disabling
+        arrLeft.classList.toggle('disabled', index === 0);
+        arrRight.classList.toggle('disabled', index === portfolioDetails.length - 1);
+    };
+
+    // Initialize portfolio view
+    updatePortfolio();
+
+    // Right arrow functionality
+    arrRight.addEventListener('click', () => {
+        if (index < portfolioDetails.length - 1) {
+            index++;
+            updatePortfolio();
+        }
+    });
+
+    // Left arrow functionality
+    arrLeft.addEventListener('click', () => {
+        if (index > 0) {
+            index--;
+            updatePortfolio();
+        }
+    });
+};
+
+// Call the function to activate portfolio functionality
+activatePortfolio();
+
+
+
+
+
